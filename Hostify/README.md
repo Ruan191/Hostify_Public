@@ -44,9 +44,8 @@ As you might have guest most of the complexity lies with the IDE developed the i
 
 All requirements can be found in requirements.txt.
 
-Note, you will need to fill in a secret key in settings.py aswell as an email address for the email verifications. Email address should also be filled in views.py in the register function. Then run these commands in the terminal:
+Note, you will need to fill in a secret key in settings.py aswell as an email address for the email verifications. Email address should also be filled in views.py in the register function. You will also need setup a mysql server and fill the details in settings.py. After all these are doen run these commands in the terminal:
 
 * python manage.py makemigrations
 * python manage.py migrate
 * python manage.py runserver
-
