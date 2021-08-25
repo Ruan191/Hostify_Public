@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="{% static 'DL/layout.css' %}">
+        <link rel="stylesheet" href="{% static 'DL/register.css' %}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <div id="logo">
+            JumpSquareHosting
+        </div>
+        <ul id=nav-bar>
+            
+            <li class="nav-item" id="nav-logs"><i class="material-icons">folder</i></li>
+            <li class="nav-item" id="nav-create-new-log"><i class="material-icons">add</i></li>
+            
+            {% if user.is_authenticated %}
+            <a href="/logout" id="nav-logout"><li class="nav-item"><i class="material-icons">logout</i></li></a>
+            {% else %}
+            <a href="/login" id="nav-logout"><li class="nav-item"><i class="material-icons">login</i></li></a>
+            {% endif %}
+        </ul>
+        {% if user.is_authenticated %}
+        <div style="float: left;">
+            <img id="nav-profile-image" src="https://simpleicon.com/wp-content/uploads/user1.png">
+            <ul>
+                <li class="profile-info">
+                    {{user.username}}
+                </li>
+                <li class="profile-info">
+                    {{user.email}}
+                </li>
+            </ul>
+        </div>
+        <div style="float: right; margin-top: 25px;">
+            <span id="docs_amount">{{docs_amount}}</span> / {{max_docs_allowed}}
+        </div>
+        {% endif %}
+        <div class="body">
+            {%if error != None%}
+            <div id="error">
+                <b id="error-msg">{{error}}</b>
+            </div>
+            {%endif%}
+            {% block body %}
+            {% endblock %}
+        </div>
+        {% csrf_token %}
+        <script src="{% static 'DL/nav.js' %}"> 
+        </script>
+    </body>
+</html>

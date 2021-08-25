@@ -1,0 +1,25 @@
+{% extends "DL/layout.html" %}
+
+{% block body %}
+{%if error != None%}
+<div id="error">
+    <b id="error-msg">{{error}}</b>
+</div>
+{%endif%}
+<div id="new-logs-page">
+    
+
+        {% csrf_token %}
+        <i class="material-icons" id="face-smile">sentiment_satisfied</i>
+        <input type="text" id="new-logs-name-field">
+        <div><button id="new-logs-create_btn">Create</button></div>
+
+    
+</div>
+<div id="logs-page" style="float: left; width: 100%;">
+    <div class="log">
+        
+    </div>
+</div>
+<div id="invites-page"></div>
+{% endblock %}

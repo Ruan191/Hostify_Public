@@ -1,0 +1,18 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <div id="view-page">
+            <div id="view">
+                {{md | safe}}
+            </div>
+        </div>
+        <script src="{% static 'DL/doc_view.js' %}"> 
+        </script>
+    </body>
+</html>

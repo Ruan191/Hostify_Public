@@ -1,0 +1,33 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{% static 'DL/doc_design.css' %}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <a href="/"><i class="material-icons" id="home-btn">home</i></a>
+            
+        <h1>{{log.name}}</h1>
+        <span id="char-count">0</span> / {{log.max_chars_allowed}}
+            <div style="text-align: right; margin-bottom: 3px;">
+                <button id="visibility-btn" ></button>
+            </div>
+            <button class="designs-view" id="html-design-view">HTML</button>
+            <button class="designs-view" id="css-design-view">CSS</button>
+            <div contenteditable="true" id="doc-textarea" spellcheck="false"></div>
+
+            <div>
+                <input id="doc-save" type="button" value="Save">
+                <a href="/view/{{log.token}}" target="_blank"><input type="button" id="doc-view" value="view"></a>
+            </div>
+            <input type="hidden" id="doc-token" value="{{log.token}}">
+
+        
+        {% csrf_token %}
+        <script src="{% static 'DL/doc_design.js' %}"></script>
+    </body>
+</html>

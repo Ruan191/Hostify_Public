@@ -1,0 +1,62 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{% static 'DL/layout.css' %}">
+        <link rel="stylesheet" href="{% static 'DL/register.css' %}">
+    </head>
+<body>
+    <div id="logo">
+        JumpSquareHosting
+    </div>
+    Create & Share!
+    {%if error != None%}
+    <div id="error">
+        <b id="error-msg">{{error}}</b>
+    </div>
+    {%endif%}
+    <div>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="row">
+                <div class="form-label">
+                    Username
+                </div>
+                <div>
+                    <input type="text"  name="register-username" minlength="3">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-label">
+                    Email
+                </div>
+                <div>
+                    <input type="email"  name="register-email" minlength="3">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-label">
+                    Password
+                </div>
+                <div>
+                    <input type="password"  name="register-password" minlength="5">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-label">
+                    Confirm Password
+                </div>
+                <div>
+                    <input type="password"  name="register-confirm-password" minlength="5">
+                </div>
+            </div>
+            <div><input class="form-btn" type="submit" value="Register" id="register-submit"></div>
+    
+        </form>
+        <script src="{% static 'DL/register.js' %}"></script>
+    </div>
+</body>
+
+</html>
