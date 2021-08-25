@@ -51,4 +51,5 @@ Note, you will need to fill in a secret key in settings.py aswell as an email ad
 * python manage.py runserver
 
 ## How it looks
-![alt text](https://github.com/Ruan191/Discord-bot/blob/main/Images/LvlState.JPG "Logo Title Text 1")
+
+![alt text](https://github.com/Ruan191/Hostify_Public/Hostify/Images/login.JPG "Logo Title Text 1")
