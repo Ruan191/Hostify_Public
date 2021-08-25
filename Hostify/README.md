@@ -51,5 +51,11 @@ Note, you will need to fill in a secret key in settings.py aswell as an email ad
 * python manage.py runserver
 
 ## How it looks
-
-![alt text](https://github.com/Ruan191/Hostify_Public/Hostify/blob/main/Images/login.JPG "Logo Title Text 1")
+### Login
+![alt text](https://github.com/Ruan191/Hostify_Public/blob/main/Hostify/Images/login.JPG "Logo Title Text 1")
+### Register
+![alt text](https://github.com/Ruan191/Hostify_Public/blob/main/Hostify/Images/register.JPG "Logo Title Text 1")
+### Main
+![alt text](https://github.com/Ruan191/Hostify_Public/blob/main/Hostify/Images/main.JPG "Logo Title Text 1")
+### Create
+![alt text](https://github.com/Ruan191/Hostify_Public/blob/main/Hostify/Images/create.JPG "Logo Title Text 1")
