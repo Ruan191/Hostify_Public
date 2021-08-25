@@ -49,3 +49,7 @@ Note, you will need to fill in a secret key in settings.py aswell as an email ad
 * python manage.py makemigrations
 * python manage.py migrate
 * python manage.py runserver
+
+## How it looks
+
+![alt text](https://github.com/Ruan191/Hostify_Public/Hostify/blob/main/Images/login.JPG "Logo Title Text 1")
