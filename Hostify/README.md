@@ -42,4 +42,11 @@ As you might have guest most of the complexity lies with the IDE developed the i
 
 ## How to run the server
 
-Once in the right directory simpy just run the command 'python manage.py runserver' in the terminal nothing else are needed to run the application.
+All requirements can be found in requirements.txt.
+
+Note, you will need to fill in a secret key in settings.py aswell as an email address for the email verifications. Email address should also be filled in views.py in the register function. Then run these commands in the terminal:
+
+* python manage.py makemigrations
+* python manage.py migrate
+* python manage.py runserver
+
