@@ -49,3 +49,6 @@ Note, you will need to fill in a secret key in settings.py aswell as an email ad
 * python manage.py makemigrations
 * python manage.py migrate
 * python manage.py runserver
+
+## How it looks
+![alt text](https://github.com/Ruan191/Discord-bot/blob/main/Images/LvlState.JPG "Logo Title Text 1")
