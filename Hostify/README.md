@@ -59,3 +59,12 @@ Note, you will need to fill in a secret key in settings.py aswell as an email ad
 ![alt text](https://github.com/Ruan191/Hostify_Public/blob/main/Hostify/Images/main.JPG "Logo Title Text 1")
 ### Create
 ![alt text](https://github.com/Ruan191/Hostify_Public/blob/main/Hostify/Images/create.JPG "Logo Title Text 1")
+### Pages
+![alt text](https://github.com/Ruan191/Hostify_Public/blob/main/Hostify/Images/pages.JPG "Logo Title Text 1")
+### Pages Edit
+![alt text](https://github.com/Ruan191/Hostify_Public/blob/main/Hostify/Images/pages_edit.JPG "Logo Title Text 1")
+### Design view
+![alt text](https://github.com/Ruan191/Hostify_Public/blob/main/Hostify/Images/html_design.JPG "Logo Title Text 1")
+![alt text](https://github.com/Ruan191/Hostify_Public/blob/main/Hostify/Images/css_design.JPG "Logo Title Text 1")
+### View
+![alt text](https://github.com/Ruan191/Hostify_Public/blob/main/Hostify/Images/view.JPG "Logo Title Text 1")
